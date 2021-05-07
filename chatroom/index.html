@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>garbage chatroom</title>
+        <script defer src="socket.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>This is a title.<br>Thank you for your support.</h1>
+        <p id="status">Status: Disconnected</p>
+        <p id="clientid">Client ID: N/A</p>
+        <p id="clientcount">Connected Chatters: 0</p>
+    <hr><br>
+        <input type="text" placeholder="Username..." id = "usernamebox">
+        <input type = "button" onclick = "initUsername()" value = "Set" id = "usernamebutton">
+        <br>
+        <p id="usernamelabel">Please set your username!</p>
+    <hr><br>
+
+        <div id='bodybox'>
+            <div id='chatborder'>
+              <p id="chatlog7" class="chatlog">&nbsp;</p>
+              <p id="chatlog6" class="chatlog">&nbsp;</p>
+              <p id="chatlog5" class="chatlog">&nbsp;</p>
+              <p id="chatlog4" class="chatlog">&nbsp;</p>
+              <p id="chatlog3" class="chatlog">&nbsp;</p>
+              <p id="chatlog2" class="chatlog">&nbsp;</p>
+              <p id="chatlog1" class="chatlog">&nbsp;</p>
+              <input type="text" name="chat" id="chatbox" placeholder="Send Message" onfocus="placeHolder()" onfocusout="setFocus('false')" disabled="true">
+            </div>
+    </body>
+</html>
